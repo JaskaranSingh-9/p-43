@@ -23,17 +23,18 @@ function draw() {
   noFill();
   strokeWeight (5)
   stroke ("blue")
-arc(10, 10, 300, 300,h,PI, PI);
-
-noFill();
-  strokeWeight (5)
-  stroke (17,255,0)
-arc(10, 10, 280, 280,m, PI, PI);
-
-noFill();
-  strokeWeight (5)
-  stroke ("red")
-arc(10, 10, 260, 260,s,400, PI + QUARTER_PI, TWO_PI);
+//drawing the arcs 
+strokeWeight(10); 
+noFill(); 
+//Seconds 
+stroke(255,0,0); 
+arc(0,0,300,300,0,sAngle); 
+//Minutes 
+stroke(0,255,0); 
+arc(0,0,280,280,0,mAngle); 
+//Hour 
+stroke(0,0,255); 
+arc(0,0,260,260,0,hAngle);
 
   push ();
   rotate (sAngle)
